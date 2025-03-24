@@ -2,6 +2,7 @@ from statistics import mean, variance, pvariance
 import statistics 
 from statzcw.stats import *
 from sys import argv
+import unittest
 
 data0 = [1.0, 2.0, 3.0, 4.0, 5.0]
 data2 = [1.0, 2.0, 2.0, 4.0, 5.0]
