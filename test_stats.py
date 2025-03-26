@@ -2,7 +2,7 @@ from statistics import mean, variance, pvariance
 import statistics 
 from statzcw.stats import *
 from sys import argv
-import unittest
+
 
 data0 = [1.0, 2.0, 3.0, 4.0, 5.0]
 data2 = [1.0, 2.0, 2.0, 4.0, 5.0]
@@ -35,10 +35,10 @@ sample10 = [-14.82381293, -0.29423447, -13.56067979, -1.6288903, -0.31632439,
           0.53459687, -1.34069996, -1.61042692, -4.03220519, -0.24332097]
 
 # # Prints variance of the sample sets
-# print("Variance of sample set is % s" 
-#       %(variance(sample))) 
+print("Variance of sample set is % s"
+      %(variance(sample)))
 
-# print("zvariance of sample set is ", zvariance(sample))
+print("zvariance of sample set is ", zvariance(sample))
 
 # # Variance of sample set is 0.40924
 # print("\nVariance of Sample1 is % s " %(variance(sample1))) 
@@ -70,10 +70,10 @@ sample10 = [-14.82381293, -0.29423447, -13.56067979, -1.6288903, -0.31632439,
 # print("The statistics.variance of list is : " + str(res)) 
 
 if __name__ == "__main__":
-    #print("var of data0", zvariance(data0))
-    #print("corr of data0", zcorr(data0,data2))
+    print("var of data0", zvariance(data0))
+    print("corr of data0", zcorr(data0,data2))
     z = readDataSets(argv[1:])
-    # print("z", z)
+    print("z", z)
     print("statzcw")
     for k, v in z.items():
         print(k)

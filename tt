@@ -8,4 +8,4 @@ python3 test_io.py $files
 echo
 echo "Run Tests"
 echo
-python3 test_stats.py $files 
+python3 test_stats.py $files

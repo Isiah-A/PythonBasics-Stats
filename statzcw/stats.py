@@ -13,8 +13,8 @@ def zmode(data: List[float]) -> float :
     return max(set(data), key=data.count)
 
 def zmedian(data: List[float]) -> float :
-    d = len(data)
-    data.sort()
+    d = len(data) #need length of list
+    data.sort() #sort list in order first
     if d % 2 == 0:
         median1 = data[d // 2]
         median2 = data[d // 2 - 1]
@@ -51,7 +51,7 @@ def zcorr(datax: List[float], datay: List[float]) -> float :
     variance1 = sum(pow(x - avg1, 2) for x in datax) / len(datax)
     datax_dev = math.sqrt(variance1)
 
-    #Mean and deviation of both lists...
+    #calc mean and deviation of both lists...
 
     avg2 = sum(datay) / len(datay)
     variance2 = sum(pow(x - avg2, 2) for x in datay) / len(datay)
